@@ -71,7 +71,7 @@
 
                 seleccion.forEach(s => {
                     if(s.nota_pga < s.nota_titulo && s.nota_titulo >= 6){
-                        aqui.innerHTML += `<tr><td>${s.nombre_paterno} ${s.nombre_materno}, ${s.nombre_pila[0]}</td><td>${s.year}</td><td><a href="https://diseno.uc.cl/memorias/pdf/${s.nombre_pdf}">${s.nombre_proyecto}</a></td><td>${s.nombre_guia}</td><td>${s.nota_titulo}</td></tr>`;
+                        aqui.innerHTML += `<tr><td>${s.nombre_paterno} ${s.nombre_materno}, ${s.nombre_pila[0]}</td><td>${s.year}</td><td><a href="https://diseno.uc.cl/memorias/pdf/${s.nombre_pdf}">${s.nombre_proyecto}</a></td><td>${s.nombre_guia}</td><td>${s.nota_titulo.toFixed(1)}</td></tr>`;
                         //"<li>"+ s.nombre_completo +"("+s.nombre_guia +")</li>";
                     }
                 });
